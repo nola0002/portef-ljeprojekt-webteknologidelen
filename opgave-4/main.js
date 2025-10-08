@@ -93,7 +93,7 @@ studentGrades.forEach((grade) => { // grade represents each grade in the array
 const avgGrade = sumOfGrades /studentGrades.length;
 
 
-function findCategory(element) { // mad a function that return the category that number is in.
+function findCategory(element) { // made a function that returns the category a number is in.
     if (element >= 90) {
         return `${element}: A`
     } else if (element >= 80) {
