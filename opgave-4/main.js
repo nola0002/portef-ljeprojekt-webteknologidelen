@@ -74,12 +74,13 @@ console.log(avgGrade) //logging average grades of the students in the array.
 
  */
 
-/* Exercise 4.6
+
 const studentGrades = [38, 92, 78, 63, 69, 88, 90, 54];
 
 let sumOfGrades = 0
 let max = studentGrades[0]
 let min = studentGrades[0]
+const howManyGrades = studentGrades.length
 
 studentGrades.forEach((grade) => { // grade represents each grade in the array
     sumOfGrades = sumOfGrades + grade;
@@ -95,38 +96,39 @@ const avgGrade = sumOfGrades /studentGrades.length;
 
 function findCategory(element) { // made a function that returns the category a number is in.
     if (element >= 90) {
-        return `${element}: A`
+        return `${element} (A)`
     } else if (element >= 80) {
-        return `${element}: B`
+        return `${element} (B)`
     } else if (element >= 70) {
-        return `${element}: C`
+        return `${element} (C)`
     } else if (element >= 60) {
-        return `${element}: D`
+        return `${element} (D)`
     } else if (element >= 0) {
-        return `${element}: F`
+        return `${element} (F)`
     }
 }
 // using the function to find out and log which category the max and minimum is in.
-
-
-console.log(findCategory(max)) //logging max grade with the category
-console.log(findCategory(min)) //logging minimum grade with the category
-console.log(avgGrade) //logging average grade
-
+console.log(`There are ${howManyGrades} grades in the class`)
+// logging the amount of grades.
 
 studentGrades.forEach((grade) => {
     if (grade >= 90) {
-        console.log(`${grade}: A`)
+        console.log(`${grade} (A)`)
     } else if (grade >= 80) {
-        console.log(`${grade}: B`)
+        console.log(`${grade} (B)`)
     } else if (grade >= 70) {
-        console.log(`${grade}: C`)
+        console.log(`${grade} (C)`)
     } else if (grade >= 60) {
-        console.log(`${grade}: D`)
+        console.log(`${grade} (D)`)
     } else if (grade >= 0) {
-        console.log(`${grade}: F`)
+        console.log(`${grade} (F)`)
     }
 });
 //logging the list of grades with the category
 
- */
+console.log(`Highest grade: ${findCategory(max)}`) //logging max grade with the category
+console.log(`Lowest grade: ${findCategory(min)}`) //logging minimum grade with the category
+console.log(`Average grade: ${avgGrade}`) //logging average grade
+
+
+
