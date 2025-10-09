@@ -6,54 +6,47 @@ const player2 = prompt("Please enter your name:", "Player 2")
 console.log(`Welcome to the Dice Rolling Championship!`)
 console.log(`Player 1: ${player1}`) //logging player 1 and 2
 console.log(`Player 2: ${player2}`)
+console.log(``)
 
 
-function diceRoller() {
+function diceRoller() { //function that finds a random number between 1 and 6
     return Math.floor(Math.random()* 6)+1;
-} // I used math.floor from earlier exercise, got help from ai to use *6 +1, because i couldn't find the answer anywhere else.
+} // I used math.floor from earlier exercise, got help from AI to use *6 +1, because I couldn't find the answer anywhere else.
 
-const roll = diceRoller()
 
-function playerRoll(playerName) {
-    prompt(`${playerName}, press enter to roll...`); // I got help from notion ai to find out how i could use prompt() in a function, because I couldn't find it on the internet.
-    console.log(`${playerName} rolled: ${roll}`);
-    return roll;
+
+let player1RollTotal = 0
+let player2RollTotal = 0
+
+for (let r = 1; r <= 10; r++ ) {
+    console.log(`Round ${r}:`)
+    const player1Roll = diceRoller()
+    prompt(`${player1}, press enter to roll...`); // I got help from notion AI to find out how i could use prompt() in a function, because I couldn't find it on the internet.
+    player1RollTotal = player1RollTotal + player1Roll
+    console.log(`${player1}, press enter to roll...`)
+    console.log(`${player1} rolled: ${player1Roll} (total: ${player1RollTotal})`);
+
+    const player2Roll = diceRoller()
+    prompt(`${player2}, press enter to roll...`); // I got help from notion AI to find out how i could use prompt() in a function, because I couldn't find it on the internet.
+    player2RollTotal = player2RollTotal + player2Roll
+    console.log(`${player2}, press enter to roll...`)
+    console.log(`${player2} rolled: ${player2Roll} (total: ${player2RollTotal})`);
+
+    console.log(``)
 }
 
-console.log(playerRoll(player1))
-console.log(playerRoll(player2))
-
-
-
-
-
-
-
-/*
-function diceRoller() {
-    return Math.floor(Math.random()* 6)+1;
-} // I used math.floor from earlier exercise, got help from ai to use *6 +1, because i couldn't find the answer anywhere else.
-
-const roll = diceRoller()
-let player1TotalScore = 0;
-let player2TotalScore = 0;
-
-
-function playerRoll(p1, p2) {
-    if (prompt(`${p1}, press enter to roll...`)) { // I got help from notion ai to find out how i could use prompt() in a function, because I couldn't find it on the internet.
-        console.log(`${p1} rolled: ${roll}`);
-        player1TotalScore = player1TotalScore + roll(p1);
-        return roll;
-    }  else if (prompt(`${p2}, press enter to roll...`)) {
-        console.log(`${p2} rolled: ${roll}`);
-        player2TotalScore = player2TotalScore + roll(p2);
-        return roll;
-    }
+console.log(`🎉 Game Over! 🎉`)
+console.log(`Final Scores:`)
+console.log(`${player1}: ${player1RollTotal}`)
+console.log(`${player2}: ${player2RollTotal}`)
+console.log(``)
+if (player1RollTotal > player2RollTotal) {
+    console.log(`🏆 ${player1} wins the championship! 🏆`)
+} else if (player1RollTotal === player2RollTotal) {
+    console.log(`Its a draw, refresh the site and play another game!`)
+} else {
+    console.log(`🏆 ${player2} wins the championship! 🏆`)
 }
-
-
-console.log(playerRoll(player1, player2))
-
 
 
 
