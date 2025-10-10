@@ -35,6 +35,7 @@ for (let r = 1; r <= 10; r++ ) {
     console.log(``)
 }
 
+
 console.log(`🎉 Game Over! 🎉`)
 console.log(`Final Scores:`)
 console.log(`${player1}: ${player1RollTotal}`)
