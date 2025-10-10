@@ -1,17 +1,14 @@
-*{
-    /* Tilføj ´*{´ */
-    outline-style: dotted;
-    outline-color: red;
-    outline-offset: -1px;
-} /*kanter på elementer til visualisere design*/
-
 
 * {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "width" 100;
+    font-weight: normal;
 }
+
+
+/*<editor-fold desc="navigation list">*/
 
 #menu .logo img {
     max-width: 100%;
@@ -51,8 +48,6 @@
 .menu-navigation li a:hover {
     color: #69D14F;
     transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
 }
 
 .menu-navigation .sign-up {
@@ -65,3 +60,48 @@
     border-radius: 40px;
     border: none;
 }
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="get started">*/
+
+#get-started {
+    display: flex;
+    margin: 4%;
+    padding-top: 4%;
+}
+
+.get-started-text {
+    justify-content: center;
+    align-items: center;
+    padding-right: 13%;
+    padding-left: 8%;
+    font-size: 155%;
+}
+
+.get-started-text h2 {
+    color: #323434;
+    font-weight: bolder;
+}
+.get-started-text p {
+    color: #474747;
+    font-weight: lighter;
+}
+
+.download-qr {
+    padding-right: 16%;
+    padding-top: 1.5%;
+}
+
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="discover app">*/
+
+
+
+
+
+
+/*</editor-fold>*/
