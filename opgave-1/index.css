@@ -1,4 +1,5 @@
 
+
 * {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -53,10 +54,7 @@
 .menu-navigation .sign-up {
     background-color: #69D14F;
     color: #fff;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     border-radius: 40px;
     border: none;
 }
@@ -99,9 +97,97 @@
 
 /*<editor-fold desc="discover app">*/
 
+#discover-our-app-head h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: #323434;
+}
+
+#discover-our-app {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin: 3%;
+}
+
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="text and phones">*/
+#book-car {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 140px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 64px;
+
+}
+.application-book-car img {
+    width: 100%;
+    height: 100%;
+}
+
+#get-going {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 140px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 64px;
+
+}
+.application-get-going img {
+    width: 100%;
+    height: 100%;
+}
+
+#ending-trip {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 140px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 64px;
+
+}
+.application-ending-trip img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="footer">*/
+#information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #f5f5f5;
+    padding-top: 4%;
+    column-gap: 64px;
+}
+.company-information img {
+    width: 55%;
+    height: 15%;
+}
+
+#information
+
 
 
 
 
 
 /*</editor-fold>*/
+
