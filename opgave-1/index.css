@@ -182,7 +182,11 @@
     height: 15%;
 }
 
-#information
+#information ul {
+    list-style: none;
+    text-decoration: none;
+    color: #222;
+}
 
 
 
