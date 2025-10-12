@@ -8,6 +8,15 @@
     font-weight: normal;
 }
 
+* {
+    color: #474747;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /*<editor-fold desc="navigation list">*/
 
@@ -61,7 +70,6 @@
 
 /*</editor-fold>*/
 
-
 /*<editor-fold desc="get started">*/
 
 #get-started {
@@ -90,6 +98,7 @@
 .download-qr {
     padding-right: 16%;
     padding-top: 1.5%;
+    width: 800px;
 }
 
 
@@ -119,6 +128,7 @@
 /*</editor-fold>*/
 
 /*<editor-fold desc="text and phones">*/
+
 #book-car {
     max-width: 1200px;
     margin: 60px auto;
@@ -134,6 +144,29 @@
     height: 100%;
 }
 
+.text-book-car h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #222222;
+}
+
+#book-car button {
+    padding: 10px 18px;
+    border: 2px solid #474747;
+    background: #fff;
+    color: #474747;
+    text-decoration: none;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    font-size: large;
+}
+
+#book-car button:hover {
+    background: #474747;
+    color: #fff;
+    transition: ease 0.3s;
+}
+
 #get-going {
     max-width: 1200px;
     margin: 60px auto;
@@ -141,12 +174,35 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    text-align: right;
     column-gap: 64px;
-
 }
 .application-get-going img {
     width: 100%;
     height: 100%;
+}
+
+.text-get-going h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #222222;
+}
+
+#get-going button {
+    padding: 10px 18px;
+    border: 2px solid #474747;
+    background: #fff;
+    color: #474747;
+    text-decoration: none;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    font-size: large;
+}
+
+#get-going button:hover {
+    background: #474747;
+    color: #fff;
+    transition: ease 0.3s;
 }
 
 #ending-trip {
@@ -164,18 +220,47 @@
     height: 100%;
 }
 
+.text-ending-trip h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #222222;
+}
+
+#ending-trip button {
+    padding: 10px 18px;
+    border: 2px solid #474747;
+    background: #fff;
+    color: #474747;
+    text-decoration: none;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    font-size: large;
+}
+
+#ending-trip button:hover {
+    background: #474747;
+    color: #fff;
+    transition: ease 0.3s;
+}
+
 
 
 /*</editor-fold>*/
 
-
 /*<editor-fold desc="footer">*/
+footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #eee;
+}
+
 #information {
+    max-width: 1200px;
+    margin: 4% auto;
+    padding: 3% 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #f5f5f5;
-    padding-top: 4%;
-    column-gap: 64px;
+    column-gap: 5%;
+    row-gap: 2%;
 }
 .company-information img {
     width: 55%;
@@ -183,15 +268,78 @@
 }
 
 #information ul {
+    display: grid;
     list-style: none;
+    padding: 0;
+    gap: 8px;
+
+}
+.company-information p {
+    color: #474747;
+}
+
+.guides li a {
     text-decoration: none;
     color: #222;
+}
+.corporate li a {
+    text-decoration: none;
+    color: #222;
+}
+.communities li a {
+    text-decoration: none;
+    color: #222;
+}
+
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="media">*/
+@media (max-width: 1000px) {
+    html {
+        font-size: 15px;
+    }
+    #book-car, #get-going, #ending-trip {
+        column-gap: 1.2%;
+        padding: 3.5% 0.8%;
+    }
+    #information {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.2%;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 15px;
+    }
+    .menu-navigation ul {
+        gap: 1%;
+        margin-right: 0.6%;
+    }
+    #menu .logo img {
+        margin-left: 0.5%;
+    }
+    #get-started {
+        flex-direction: column;
+        margin: 1% 0;
+        padding-top: 0.6%;
+    }
+    .get-started-text {
+        padding-right: 6%;
+        padding-left: 6%;
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+
+    }
 }
 
 
 
 
 
-
 /*</editor-fold>*/
-
