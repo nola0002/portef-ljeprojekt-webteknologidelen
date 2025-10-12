@@ -15,18 +15,18 @@ function diceRoller() { //function that finds a random number between 1 and 6
 
 
 
-let player1RollTotal = 0
-let player2RollTotal = 0
+let player1RollTotal = 0 // assigning player1rolltotal to zero so i can add the rolled value in my for loop each round
+let player2RollTotal = 0 // assigning player2rolltotal to zero so i can add the rolled value in my for loop each round
 
-for (let r = 1; r <= 10; r++ ) {
-    console.log(`Round ${r}:`)
-    const player1Roll = diceRoller()
-    prompt(`${player1}, press enter to roll...`);
-    player1RollTotal = player1RollTotal + player1Roll
-    console.log(`${player1}, press enter to roll...`)
-    console.log(`${player1} rolled: ${player1Roll} (total: ${player1RollTotal})`);
+for (let r = 1; r <= 10; r++ ) { // making a for loop that starts at 1 ends at 10. r value stands for rounds.
+    console.log(`Round ${r}:`) // logging the number of round we're in every time the loop starts.
+    const player1Roll = diceRoller() // assigning our dice rolling function, to a easier name being player1roll.
+    prompt(`${player1}, press enter to roll...`); // player 1 is getting asked by the pup op prompt to press enter to roll.
+    player1RollTotal = player1RollTotal + player1Roll // adding the rolled value from the player to the prior assigned roll total
+    console.log(`${player1}, press enter to roll...`) // logging the press enter to roll, so we also can see it in the console.
+    console.log(`${player1} rolled: ${player1Roll} (total: ${player1RollTotal})`); // loggin the playername what he rolled and the total after the round we're in.
 
-    const player2Roll = diceRoller()
+    const player2Roll = diceRoller() // doing the exact same for player2 as we did for player 1.
     prompt(`${player2}, press enter to roll...`);
     player2RollTotal = player2RollTotal + player2Roll
     console.log(`${player2}, press enter to roll...`)
@@ -36,17 +36,17 @@ for (let r = 1; r <= 10; r++ ) {
 }
 
 
-console.log(`🎉 Game Over! 🎉`)
-console.log(`Final Scores:`)
-console.log(`${player1}: ${player1RollTotal}`)
-console.log(`${player2}: ${player2RollTotal}`)
-console.log(``)
-if (player1RollTotal > player2RollTotal) {
-    console.log(`🏆 ${player1} wins the championship! 🏆`)
-} else if (player1RollTotal === player2RollTotal) {
-    console.log(`Its a draw, refresh the site and play another game!`)
-} else {
-    console.log(`🏆 ${player2} wins the championship! 🏆`)
+console.log(`🎉 Game Over! 🎉`) //logging the expected output from the exercise
+console.log(`Final Scores:`) //logging the expected output from the exercise
+console.log(`${player1}: ${player1RollTotal}`) //logging player1 name and his total score after the 10 rounds.
+console.log(`${player2}: ${player2RollTotal}`) //logging player2 name and his total score after the 10 rounds.
+console.log(``) // making a line shift.
+if (player1RollTotal > player2RollTotal) { // if player 1 total score is larger than player 2 total score
+    console.log(`🏆 ${player1} wins the championship! 🏆`) // log this
+} else if (player1RollTotal === player2RollTotal) { // if player 1 total score equals player 2 total score
+    console.log(`Its a draw, refresh the site and play another game!`) // log this
+} else { // if none of the above is true
+    console.log(`🏆 ${player2} wins the championship! 🏆`) // log this
 }
 
 
