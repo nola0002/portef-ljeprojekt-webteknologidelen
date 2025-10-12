@@ -58,10 +58,10 @@ let min = studentGrades[0]
 // creating a variable max and min studentGrades[0], max and min equals first element in the array
 studentGrades.forEach((grade) => { // grade represents each grade in the array, using for each to iterate my array.
     sumOfGrades = sumOfGrades + grade; // Every time we pass a element we're going to add that to the sumOfGrades.
-    if (grade > max) { // if the element we passing in the array is larger than the current max.
-        max = grade; // Then that element we passed is gonna be the new max
+    if (grade > max) { // if the element we're passing in the array is larger than the current max.
+        max = grade; // Then that element we passed is going to be the new max
     } else if (grade < min){ //if the element we are passing in the array is smaller than the current minimum.
-        min = grade; // Then that element we passed is gonna be the new minimum.
+        min = grade; // Then that element we passed is going to be the new minimum.
     }
 });
 
@@ -130,5 +130,5 @@ console.log(`Highest grade: ${findCategory(max)}`) //logging max grade with the 
 console.log(`Lowest grade: ${findCategory(min)}`) //logging minimum grade with the category
 console.log(`Average grade: ${avgGrade}`) //logging average grade
 
-
+// in exercise 4.6 we're putting all the things we learned from prior levelse together.
 
