@@ -21,13 +21,13 @@ let player2RollTotal = 0
 for (let r = 1; r <= 10; r++ ) {
     console.log(`Round ${r}:`)
     const player1Roll = diceRoller()
-    prompt(`${player1}, press enter to roll...`); // I got help from notion AI to find out how i could use prompt() in a function, because I couldn't find it on the internet.
+    prompt(`${player1}, press enter to roll...`);
     player1RollTotal = player1RollTotal + player1Roll
     console.log(`${player1}, press enter to roll...`)
     console.log(`${player1} rolled: ${player1Roll} (total: ${player1RollTotal})`);
 
     const player2Roll = diceRoller()
-    prompt(`${player2}, press enter to roll...`); // I got help from notion AI to find out how i could use prompt() in a function, because I couldn't find it on the internet.
+    prompt(`${player2}, press enter to roll...`);
     player2RollTotal = player2RollTotal + player2Roll
     console.log(`${player2}, press enter to roll...`)
     console.log(`${player2} rolled: ${player2Roll} (total: ${player2RollTotal})`);
